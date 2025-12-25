@@ -38,18 +38,18 @@
             textBoxFindAccount = new TextBox();
             buttonFindAccount = new Button();
             panel4 = new Panel();
+            buttonDetail = new Button();
             buttonClear = new Button();
             textBoxPassword = new TextBox();
             label3 = new Label();
             textBoxAccountDisplayName = new TextBox();
-            label2 = new Label();
-            comboBoxAccountRole = new ComboBox();
             label1 = new Label();
             textBoxAccountUserName = new TextBox();
             textBoxAccountID = new TextBox();
             label9 = new Label();
             label10 = new Label();
-            buttonDetail = new Button();
+            comboBoxAccountRole = new ComboBox();
+            label2 = new Label();
             panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridViewAccount).BeginInit();
             tableLayoutPanel2.SuspendLayout();
@@ -167,6 +167,16 @@
             panel4.Size = new Size(635, 532);
             panel4.TabIndex = 13;
             // 
+            // buttonDetail
+            // 
+            buttonDetail.Location = new Point(13, 472);
+            buttonDetail.Name = "buttonDetail";
+            buttonDetail.Size = new Size(150, 46);
+            buttonDetail.TabIndex = 19;
+            buttonDetail.Text = "Detail";
+            buttonDetail.UseVisualStyleBackColor = true;
+            buttonDetail.Click += buttonDetail_Click;
+            // 
             // buttonClear
             // 
             buttonClear.Location = new Point(471, 472);
@@ -199,23 +209,6 @@
             textBoxAccountDisplayName.Name = "textBoxAccountDisplayName";
             textBoxAccountDisplayName.Size = new Size(415, 39);
             textBoxAccountDisplayName.TabIndex = 15;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(13, 283);
-            label2.Name = "label2";
-            label2.Size = new Size(72, 32);
-            label2.TabIndex = 14;
-            label2.Text = "Role :";
-            // 
-            // comboBoxAccountRole
-            // 
-            comboBoxAccountRole.FormattingEnabled = true;
-            comboBoxAccountRole.Location = new Point(206, 275);
-            comboBoxAccountRole.Name = "comboBoxAccountRole";
-            comboBoxAccountRole.Size = new Size(415, 40);
-            comboBoxAccountRole.TabIndex = 13;
             // 
             // label1
             // 
@@ -258,15 +251,22 @@
             label10.TabIndex = 0;
             label10.Text = "ID :";
             // 
-            // buttonDetail
+            // comboBoxAccountRole
             // 
-            buttonDetail.Location = new Point(13, 472);
-            buttonDetail.Name = "buttonDetail";
-            buttonDetail.Size = new Size(150, 46);
-            buttonDetail.TabIndex = 19;
-            buttonDetail.Text = "Detail";
-            buttonDetail.UseVisualStyleBackColor = true;
-            buttonDetail.Click += buttonDetail_Click;
+            comboBoxAccountRole.FormattingEnabled = true;
+            comboBoxAccountRole.Location = new Point(206, 275);
+            comboBoxAccountRole.Name = "comboBoxAccountRole";
+            comboBoxAccountRole.Size = new Size(415, 40);
+            comboBoxAccountRole.TabIndex = 13;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(13, 283);
+            label2.Name = "label2";
+            label2.Size = new Size(72, 32);
+            label2.TabIndex = 14;
+            label2.Text = "Role :";
             // 
             // AccountManagementForm
             // 
@@ -306,13 +306,13 @@
         private TextBox textBoxAccountID;
         private Label label9;
         private Label label10;
-        private ComboBox comboBoxAccountRole;
         private Label label1;
         private TextBox textBoxAccountDisplayName;
-        private Label label2;
         private TextBox textBoxPassword;
         private Label label3;
         private Button buttonClear;
         private Button buttonDetail;
+        private Label label2;
+        private ComboBox comboBoxAccountRole;
     }
 }

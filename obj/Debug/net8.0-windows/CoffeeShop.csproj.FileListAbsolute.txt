@@ -33,3 +33,4 @@ C:\Users\macbook\source\repos\CoffeeShop\bin\Debug\net8.0-windows\CoffeeShop.dll
 C:\Users\macbook\source\repos\CoffeeShop\obj\Debug\net8.0-windows\CoffeeShop.UserInformation.resources
 C:\Users\macbook\source\repos\CoffeeShop\bin\Debug\net8.0-windows\BCrypt.Net-Next.dll
 C:\Users\macbook\source\repos\CoffeeShop\bin\Debug\net8.0-windows\System.Windows.Forms.DataVisualization.dll
+C:\Users\macbook\source\repos\CoffeeShop\obj\Debug\net8.0-windows\CoffeeShop.sourcelink.json

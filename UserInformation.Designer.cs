@@ -37,13 +37,12 @@
             pictureBoxImage = new PictureBox();
             textBoxUsername = new TextBox();
             textBoxDisplayname = new TextBox();
-            textBoxRole = new TextBox();
             textBoxCitizenid = new TextBox();
-            textBoxBirthday = new TextBox();
             textBoxPhonenumber = new TextBox();
             buttonUploadImage = new Button();
-            label7 = new Label();
-            textBoxPassword = new TextBox();
+            buttonUpdate = new Button();
+            textBoxRole = new TextBox();
+            dateTimePickerBirthday = new DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)pictureBoxImage).BeginInit();
             SuspendLayout();
             // 
@@ -95,7 +94,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(103, 308);
+            label6.Location = new Point(103, 242);
             label6.Name = "label6";
             label6.Size = new Size(72, 32);
             label6.TabIndex = 5;
@@ -111,7 +110,6 @@
             // 
             // textBoxUsername
             // 
-            textBoxUsername.Enabled = false;
             textBoxUsername.Location = new Point(346, 73);
             textBoxUsername.Name = "textBoxUsername";
             textBoxUsername.Size = new Size(485, 39);
@@ -119,39 +117,20 @@
             // 
             // textBoxDisplayname
             // 
-            textBoxDisplayname.Enabled = false;
             textBoxDisplayname.Location = new Point(346, 151);
             textBoxDisplayname.Name = "textBoxDisplayname";
             textBoxDisplayname.Size = new Size(485, 39);
             textBoxDisplayname.TabIndex = 8;
             // 
-            // textBoxRole
-            // 
-            textBoxRole.Enabled = false;
-            textBoxRole.Location = new Point(346, 308);
-            textBoxRole.Name = "textBoxRole";
-            textBoxRole.Size = new Size(485, 39);
-            textBoxRole.TabIndex = 9;
-            // 
             // textBoxCitizenid
             // 
-            textBoxCitizenid.Enabled = false;
             textBoxCitizenid.Location = new Point(346, 391);
             textBoxCitizenid.Name = "textBoxCitizenid";
             textBoxCitizenid.Size = new Size(485, 39);
             textBoxCitizenid.TabIndex = 10;
             // 
-            // textBoxBirthday
-            // 
-            textBoxBirthday.Enabled = false;
-            textBoxBirthday.Location = new Point(346, 470);
-            textBoxBirthday.Name = "textBoxBirthday";
-            textBoxBirthday.Size = new Size(485, 39);
-            textBoxBirthday.TabIndex = 11;
-            // 
             // textBoxPhonenumber
             // 
-            textBoxPhonenumber.Enabled = false;
             textBoxPhonenumber.Location = new Point(346, 543);
             textBoxPhonenumber.Name = "textBoxPhonenumber";
             textBoxPhonenumber.Size = new Size(485, 39);
@@ -167,33 +146,40 @@
             buttonUploadImage.UseVisualStyleBackColor = true;
             buttonUploadImage.Click += buttonUploadImage_Click;
             // 
-            // label7
+            // buttonUpdate
             // 
-            label7.AutoSize = true;
-            label7.Location = new Point(103, 233);
-            label7.Name = "label7";
-            label7.Size = new Size(123, 32);
-            label7.TabIndex = 14;
-            label7.Text = "Password :";
+            buttonUpdate.Location = new Point(890, 543);
+            buttonUpdate.Name = "buttonUpdate";
+            buttonUpdate.Size = new Size(150, 46);
+            buttonUpdate.TabIndex = 16;
+            buttonUpdate.Text = "Update";
+            buttonUpdate.UseVisualStyleBackColor = true;
+            buttonUpdate.Click += buttonUpdate_Click;
             // 
-            // textBoxPassword
+            // textBoxRole
             // 
-            textBoxPassword.Enabled = false;
-            textBoxPassword.Location = new Point(346, 233);
-            textBoxPassword.Name = "textBoxPassword";
-            textBoxPassword.Size = new Size(485, 39);
-            textBoxPassword.TabIndex = 15;
+            textBoxRole.Enabled = false;
+            textBoxRole.Location = new Point(346, 242);
+            textBoxRole.Name = "textBoxRole";
+            textBoxRole.Size = new Size(485, 39);
+            textBoxRole.TabIndex = 9;
+            // 
+            // dateTimePickerBirthday
+            // 
+            dateTimePickerBirthday.Location = new Point(349, 470);
+            dateTimePickerBirthday.Name = "dateTimePickerBirthday";
+            dateTimePickerBirthday.Size = new Size(482, 39);
+            dateTimePickerBirthday.TabIndex = 17;
             // 
             // UserInformation
             // 
             AutoScaleDimensions = new SizeF(13F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1664, 644);
-            Controls.Add(textBoxPassword);
-            Controls.Add(label7);
+            Controls.Add(dateTimePickerBirthday);
+            Controls.Add(buttonUpdate);
             Controls.Add(buttonUploadImage);
             Controls.Add(textBoxPhonenumber);
-            Controls.Add(textBoxBirthday);
             Controls.Add(textBoxCitizenid);
             Controls.Add(textBoxRole);
             Controls.Add(textBoxDisplayname);
@@ -224,12 +210,11 @@
         private PictureBox pictureBoxImage;
         private TextBox textBoxUsername;
         private TextBox textBoxDisplayname;
-        private TextBox textBoxRole;
         private TextBox textBoxCitizenid;
-        private TextBox textBoxBirthday;
         private TextBox textBoxPhonenumber;
         private Button buttonUploadImage;
-        private Label label7;
-        private TextBox textBoxPassword;
+        private Button buttonUpdate;
+        private TextBox textBoxRole;
+        private DateTimePicker dateTimePickerBirthday;
     }
 }

@@ -79,6 +79,37 @@ namespace CoffeeShop.DAO
             }
         }
 
+        // Only updates Role and Password (used in Account Management).
+        public void UpdateAccount(int id, string role, string password)
+        {
+            using (SqlConnection connection = CreateConnection())
+            {
+                connection.Open();
+                string sql = @"UPDATE Users
+                               SET Role = @role,
+                                   Password = @password
+                               WHERE Id = @id";
+                connection.Execute(sql, new { id, role, password });
+            }
+        }
+
+        // Updates personal information: DisplayName, CitizenId, Birthday, PhoneNumber.
+        // Excludes Role, Picture, and Password.
+        public void UpdatePersonalInfo(User user)
+        {
+            using (SqlConnection connection = CreateConnection())
+            {
+                connection.Open();
+                string sql = @"UPDATE Users
+                               SET DisplayName = @DisplayName,
+                                   CitizenId = @CitizenId,
+                                   Birthday = @Birthday,
+                                   PhoneNumber = @PhoneNumber
+                               WHERE Id = @Id";
+                connection.Execute(sql, user);
+            }
+        }
+
         // Deletes a user from the system by ID.
         public void Delete(int id)
         {

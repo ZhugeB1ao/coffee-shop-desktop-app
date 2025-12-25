@@ -37,6 +37,7 @@
             toolStripStatusLabelTime = new ToolStripStatusLabel();
             menuStrip1 = new MenuStrip();
             systemToolStripMenuItem = new ToolStripMenuItem();
+            userInformationToolStripMenuItem = new ToolStripMenuItem();
             managementToolStripMenuItem = new ToolStripMenuItem();
             accountToolStripMenuItem = new ToolStripMenuItem();
             ingredientToolStripMenuItem = new ToolStripMenuItem();
@@ -104,10 +105,17 @@
             // 
             // systemToolStripMenuItem
             // 
+            systemToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { userInformationToolStripMenuItem });
             systemToolStripMenuItem.Name = "systemToolStripMenuItem";
             systemToolStripMenuItem.Size = new Size(110, 36);
             systemToolStripMenuItem.Text = "System";
-            systemToolStripMenuItem.Click += systemToolStripMenuItem_Click;
+            // 
+            // userInformationToolStripMenuItem
+            // 
+            userInformationToolStripMenuItem.Name = "userInformationToolStripMenuItem";
+            userInformationToolStripMenuItem.Size = new Size(359, 44);
+            userInformationToolStripMenuItem.Text = "User Information";
+            userInformationToolStripMenuItem.Click += userInformationToolStripMenuItem_Click;
             // 
             // managementToolStripMenuItem
             // 
@@ -197,5 +205,6 @@
         private ToolStripMenuItem statisticToolStripMenuItem;
         private Panel panel1;
         private System.Windows.Forms.Timer timerStatusTime;
+        private ToolStripMenuItem userInformationToolStripMenuItem;
     }
 }

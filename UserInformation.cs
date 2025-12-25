@@ -10,16 +10,44 @@ namespace CoffeeShop
     /// </summary>
     public partial class UserInformation : Form
     {
-        private User viewUser;    // User whose information is being viewed.
-        private User currentUser; // User performing the operation (for permission checks).
+        // ---------------------------------------------------------
+        // Fields and Dependencies
+        // ---------------------------------------------------------
+        
+        // User whose information is currently being viewed/edited.
+        private User viewUser;    
+        
+        // The user currently logged into the application (used for permission checks).
+        private User currentUser; 
+        
         private UserService userService = new UserService();
 
+        // ---------------------------------------------------------
+        // Initialization
+        // ---------------------------------------------------------
         public UserInformation(User viewUser, User currentUser)
         {
             InitializeComponent();
             UIHelper.ApplyModernStyle(this);
             this.viewUser = viewUser;
             this.currentUser = currentUser;
+
+            // Permission check: Only the owner of the profile or an Admin can modify information.
+            bool canEdit = (currentUser != null && (currentUser.UserName == viewUser.UserName || currentUser.Role == "Admin"));
+            
+            // Enable/Disable editing fields based on permissions.
+            textBoxDisplayname.Enabled = canEdit;
+            textBoxCitizenid.Enabled = canEdit;
+            dateTimePickerBirthday.Enabled = canEdit;
+            textBoxPhonenumber.Enabled = canEdit;
+            
+            // Actions only available to authorized users.
+            buttonUpdate.Enabled = canEdit;
+            buttonUploadImage.Enabled = canEdit;
+            
+            // Security/Consistency: Username and Role are non-editable identifiers in this context.
+            textBoxUsername.Enabled = false;
+            textBoxRole.Enabled = false;
         }
 
         private void UserInformation_Load(object sender, EventArgs e)
@@ -27,7 +55,11 @@ namespace CoffeeShop
             LoadUserInfo();
         }
 
-        // Populate user data into input fields.
+        // ---------------------------------------------------------
+        // Data Loading and UI Refresh
+        // ---------------------------------------------------------
+
+        // Populates the form controls with the data from the 'viewUser' object.
         private void LoadUserInfo()
         {
             if (viewUser == null) return;
@@ -36,20 +68,13 @@ namespace CoffeeShop
             textBoxDisplayname.Text = viewUser.DisplayName;
             textBoxRole.Text = viewUser.Role;
             textBoxCitizenid.Text = viewUser.CitizenId;
-            textBoxBirthday.Text = viewUser.Birthday?.ToString("dd/MM/yyyy");
+            
+            if (viewUser.Birthday != null)
+                dateTimePickerBirthday.Value = viewUser.Birthday.Value;
+                
             textBoxPhonenumber.Text = viewUser.PhoneNumber;
 
-            // Security: Only the account owner can see their own password.
-            if (currentUser != null && currentUser.UserName == viewUser.UserName)
-            {
-                textBoxPassword.Text = viewUser.Password;
-            }
-            else
-            {
-                textBoxPassword.Text = "********";
-            }
-
-            // Display profile picture from the byte array (database).
+            // Load and display the profile picture from the database's byte array.
             if (viewUser.Picture != null && viewUser.Picture.Length > 0)
             {
                 try
@@ -62,18 +87,22 @@ namespace CoffeeShop
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Lỗi load ảnh: " + ex.Message);
+                    MessageBox.Show("Failed to load profile image: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
 
-        // Upload a new profile picture.
+        // ---------------------------------------------------------
+        // UI Event Handlers
+        // ---------------------------------------------------------
+
+        // Opens a file dialog to select and upload a new profile picture.
         private void buttonUploadImage_Click(object sender, EventArgs e)
         {
-            // Permission check: Only the account owner or an Admin can change the picture.
+            // Redundant permission check before launching file dialog.
             if (currentUser == null || (currentUser.UserName != viewUser.UserName && currentUser.Role != "Admin"))
             {
-                MessageBox.Show("Bạn không có quyền thay đổi ảnh của người dùng này.");
+                MessageBox.Show("You do not have permission to change this user's profile picture.", "Access Denied", MessageBoxButtons.OK, MessageBoxIcon.Stop);
                 return;
             }
 
@@ -87,21 +116,50 @@ namespace CoffeeShop
                         byte[] imageBytes = File.ReadAllBytes(ofd.FileName);
                         viewUser.Picture = imageBytes;
 
+                        // Immediately show the new image on the UI.
                         using (MemoryStream ms = new MemoryStream(imageBytes))
                         {
                             pictureBoxImage.Image = Image.FromStream(ms);
                             pictureBoxImage.SizeMode = PictureBoxSizeMode.Zoom;
                         }
 
-                        // Update the database immediately.
+                        // Persist the change to the database.
                         userService.Update(viewUser);
-                        MessageBox.Show("Cập nhật ảnh đại diện thành công!");
+                        MessageBox.Show("Profile picture updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     catch (Exception ex)
                     {
-                        MessageBox.Show("Lỗi tải ảnh: " + ex.Message);
+                        MessageBox.Show("An error occurred while uploading the image: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
+            }
+        }
+
+        // Collects updated personal information and requests the service to perform a partial update.
+        private void buttonUpdate_Click(object sender, EventArgs e)
+        {
+            if (viewUser == null) return;
+
+            if (MessageBox.Show("Are you sure you want to update this information?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+                return;
+
+            try
+            {
+                // Synchronize DTO with form fields.
+                viewUser.DisplayName = textBoxDisplayname.Text;
+                viewUser.CitizenId = textBoxCitizenid.Text;
+                viewUser.Birthday = dateTimePickerBirthday.Value;
+                viewUser.PhoneNumber = textBoxPhonenumber.Text;
+
+                // Call the specific partial update method to prevent overwriting Password or Role.
+                userService.UpdatePersonalInfo(viewUser);
+
+                MessageBox.Show("Information updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                LoadUserInfo(); // Refresh UI to match persistent state.
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Update failed: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

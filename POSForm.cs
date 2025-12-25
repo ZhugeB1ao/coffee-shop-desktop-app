@@ -297,15 +297,15 @@ namespace CoffeeShop
             decimal finalTotal = 0;
             if (!decimal.TryParse(textBoxTotal.Text, System.Globalization.NumberStyles.Currency, new System.Globalization.CultureInfo("en-US"), out finalTotal))
             {
-                MessageBox.Show("Số tiền không hợp lệ.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Invalid amount format.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
             string finalTotalUSD = finalTotal.ToString("C", new System.Globalization.CultureInfo("en-US"));
 
             DialogResult result = MessageBox.Show(
-                $"Bạn có chắc chắn muốn thanh toán {finalTotalUSD} cho bàn này?",
-                "Xác nhận thanh toán",
+                $"Are you sure you want to process payment of {finalTotalUSD} for this table?",
+                "Confirm Payment",
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Question
             );
@@ -370,7 +370,7 @@ namespace CoffeeShop
         {
             var coupons = couponService.GetAll();
             var couponList = new List<Coupon>();
-            couponList.Add(new Coupon { Id = 0, Code = "-- Không chọn --", DiscountValue = 0 });
+            couponList.Add(new Coupon { Id = 0, Code = "-- None --", DiscountValue = 0 });
             couponList.AddRange(coupons);
 
             comboBoxCoupon.DataSource = couponList;

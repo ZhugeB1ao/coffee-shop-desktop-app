@@ -19,25 +19,36 @@ namespace CoffeeShop
     /// </summary>
     public partial class IngredientManagementForm : Form
     {
-        CategoryService categoryService = new CategoryService();
-        ProductService productService = new ProductService();
-        private byte[]? currentImageBytes = null; // Stores the byte array of the currently selected image.
+        // ---------------------------------------------------------
+        // Fields and Dependencies
+        // ---------------------------------------------------------
+        private CategoryService categoryService = new CategoryService();
+        private ProductService productService = new ProductService();
 
+        // Stores the byte array of the currently selected product image.
+        private byte[]? currentImageBytes = null;
+
+        // ---------------------------------------------------------
+        // Initialization
+        // ---------------------------------------------------------
         public IngredientManagementForm()
         {
             InitializeComponent();
             UIHelper.ApplyModernStyle(this);
-            
-            // Customize colors for the TabControl.
+
+            // Apply theme colors to the TabControl.
             tabControlIngredient.BackColor = UIHelper.BackColor;
             foreach (TabPage tab in tabControlIngredient.TabPages)
             {
                 tab.BackColor = UIHelper.BackColor;
                 tab.ForeColor = UIHelper.TextBodyColor;
             }
-            textBoxProductImagePath.Enabled = false; // Only display the filename, direct input disabled.
-            textBoxCategoryID.Enabled = false;
 
+            // Configure control basic properties.
+            textBoxProductImagePath.Enabled = false; // Path is shown for notification only.
+            textBoxCategoryID.Enabled = false;       // ID is system-generated.
+
+            // Initial data load for Category tab.
             LoadCategoryGrid();
             SetCategoryButtonState(false);
             SetProductButtonState(false);
@@ -47,26 +58,35 @@ namespace CoffeeShop
         {
         }
 
-        // Automatically reload corresponding data when switching between 'Category' and 'Product' tabs.
+        // ---------------------------------------------------------
+        // Core Tab Logic
+        // ---------------------------------------------------------
+
+        // Automatically reloads relevant data when switching between 'Category' and 'Product' tabs.
         private void tabControlIngredient_SelectedIndexChanged(object sender, EventArgs e)
         {
             TabPage selectedTab = tabControlIngredient.SelectedTab;
             if (selectedTab == tabPageProduct)
             {
-                LoadProducts();
-                LoadCategories(); // Load onto the TreeView.
-                LoadCategoryToComboBox(); // Load onto the ComboBox for selection when adding/editing products.
+                LoadProducts();           // Load product list for display in ListView.
+                LoadCategories();         // Update Category tree filter.
+                LoadCategoryToComboBox(); // Refresh selection list in Product edit form.
             }
             else
             {
-                LoadCategoryGrid();
+                LoadCategoryGrid();       // Refresh category list in GridView.
             }
         }
 
-        // ==========================================
-        // QUẢN LÝ DANH MỤC (CATEGORY)
-        // ==========================================
+        // =========================================================
+        // CATEGORY MANAGEMENT
+        // =========================================================
 
+        // ---------------------------------------------------------
+        // Category Data Loading
+        // ---------------------------------------------------------
+
+        // Fetches categories and displays them in the DataGridView.
         private void LoadCategoryGrid()
         {
             dataGridViewCategory.DataSource = null;
@@ -78,20 +98,33 @@ namespace CoffeeShop
             }
         }
 
-        // Adds a new category.
+        // Populates the category selector ComboBox in the Product tab.
+        private void LoadCategoryToComboBox()
+        {
+            var categories = categoryService.GetAll();
+            comboBoxCategoryName.DataSource = categories;
+            comboBoxCategoryName.DisplayMember = "Name";
+            comboBoxCategoryName.ValueMember = "Id";
+        }
+
+        // ---------------------------------------------------------
+        // Category UI Event Handlers
+        // ---------------------------------------------------------
+
+        // Adds a new product category after validating naming rules.
         private void buttonAddCategory_Click(object sender, EventArgs e)
         {
             string categoryName = textBoxCategoryName.Text.Trim();
 
             if (string.IsNullOrEmpty(categoryName))
             {
-                MessageBox.Show("Tên danh mục không được để trống!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Category name cannot be empty!", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
             if (categoryService.IsNameExists(categoryName))
             {
-                MessageBox.Show("Tên danh mục này đã tồn tại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("This category name already exists!", "Conflict", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -101,16 +134,16 @@ namespace CoffeeShop
             ClearCategoryForm();
         }
 
-        // Deletes a category (Soft Delete).
+        // Performs a logical deletion of the selected category.
         private void buttonDeleteCategory_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(textBoxCategoryID.Text))
             {
-                MessageBox.Show("Vui lòng chọn danh mục!");
+                MessageBox.Show("Please select a category first!", "Selection Required", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            if (!Confirm("Bạn có chắc chắn muốn xóa danh mục này?"))
+            if (!Confirm("Are you sure you want to delete this category?"))
                 return;
 
             int id = int.Parse(textBoxCategoryID.Text);
@@ -118,15 +151,14 @@ namespace CoffeeShop
 
             LoadCategoryGrid();
             ClearCategoryForm();
-            MessageBox.Show("Xóa danh mục thành công!");
         }
 
-        // Updates the category name.
+        // Updates the properties of an existing category.
         private void buttonUpdateCategory_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(textBoxCategoryID.Text))
             {
-                MessageBox.Show("Vui lòng chọn danh mục!");
+                MessageBox.Show("Please select a category to update!", "Selection Required", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -141,13 +173,14 @@ namespace CoffeeShop
             ClearCategoryForm();
         }
 
-        // Searches for categories.
+        // Filters categories based on the search keyword.
         private void buttonFindCategory_Click(object sender, EventArgs e)
         {
             string keyword = textBoxFindCategory.Text.Trim();
             dataGridViewCategory.DataSource = categoryService.FindByName(keyword);
         }
 
+        // Populates category fields when a row is selected in the grid.
         private void dataGridViewCategory_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex < 0) return;
@@ -159,11 +192,21 @@ namespace CoffeeShop
             SetCategoryButtonState(true);
         }
 
-        // ==========================================
-        // QUẢN LÝ SẢN PHẨM (PRODUCT)
-        // ==========================================
+        // Resets category input fields.
+        private void buttonClearCategoryInfo_Click(object sender, EventArgs e)
+        {
+            ClearCategoryForm();
+        }
 
-        // Displays the product list as a photo gallery in the ListView.
+        // =========================================================
+        // PRODUCT MANAGEMENT
+        // =========================================================
+
+        // ---------------------------------------------------------
+        // Product Data Loading (ListView / Gallery)
+        // ---------------------------------------------------------
+
+        // Renders a specific list of products as a gallery in the ListView.
         private void LoadProducts(List<Product> products)
         {
             listViewProduct.Items.Clear();
@@ -197,12 +240,13 @@ namespace CoffeeShop
             }
         }
 
+        // Reloads the entire product library.
         private void LoadProducts()
         {
             LoadProducts(productService.GetAll());
         }
 
-        // Displays categories in the left TreeView for product filtering.
+        // Populates the filtering TreeView with current categories.
         private void LoadCategories()
         {
             List<Category> categories = categoryService.GetAll();
@@ -217,7 +261,11 @@ namespace CoffeeShop
             treeViewCategory.ExpandAll();
         }
 
-        // Filters products when a category is selected from the TreeView.
+        // ---------------------------------------------------------
+        // Product UI Event Handlers
+        // ---------------------------------------------------------
+
+        // Filters the product gallery based on the category selected in the TreeView.
         private void treeViewCategory_AfterSelect(object sender, TreeViewEventArgs e)
         {
             foreach (TreeNode node in treeViewCategory.Nodes)
@@ -234,15 +282,7 @@ namespace CoffeeShop
             ClearProductForm();
         }
 
-        private void LoadCategoryToComboBox()
-        {
-            var categories = categoryService.GetAll();
-            comboBoxCategoryName.DataSource = categories;
-            comboBoxCategoryName.DisplayMember = "Name";
-            comboBoxCategoryName.ValueMember = "Id";
-        }
-
-        // Displays product information when a ListView item is clicked.
+        // Displays full product details when an item is selected in the gallery.
         private void listViewProduct_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (listViewProduct.SelectedItems.Count == 0) return;
@@ -265,7 +305,7 @@ namespace CoffeeShop
                     {
                         pictureBoxProductImage.Image = Image.FromStream(ms);
                     }
-                    textBoxProductImagePath.Text = "[Ảnh từ database]";
+                    textBoxProductImagePath.Text = "[Database Image]";
                 }
                 catch
                 {
@@ -282,20 +322,20 @@ namespace CoffeeShop
             SetProductButtonState(true);
         }
 
-        // Adds a new product along with an image.
+        // Validates and adds a new product to the library.
         private void buttonAddProduct_Click(object sender, EventArgs e)
         {
             string productName = textBoxProductName.Text.Trim();
 
             if (string.IsNullOrEmpty(productName))
             {
-                MessageBox.Show("Tên sản phẩm không được trống!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Product name cannot be empty!", "Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
             if (productService.IsNameExists(productName))
             {
-                MessageBox.Show("Tên sản phẩm đã tồn tại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("A product with this name already exists!", "Conflict", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -312,31 +352,32 @@ namespace CoffeeShop
             ClearProductForm();
         }
 
-        // Deletes a product.
+        // Removes the selected product from the inventory.
         private void buttonDeleteProduct_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(textBoxProductID.Text))
             {
-                MessageBox.Show("Vui lòng chọn sản phẩm!");
+                MessageBox.Show("Please select a product to delete!", "Selection Required", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            if (!Confirm("Bạn có chắc chắn muốn xóa sản phẩm này?"))
+            if (!Confirm("Are you sure you want to delete this product?"))
                 return;
 
             int id = int.Parse(textBoxProductID.Text);
             productService.Delete(id);
 
             LoadProducts();
-            MessageBox.Show("Xóa sản phẩm thành công!");
+            ClearProductForm();
+            MessageBox.Show("Product deleted successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        // Updates product information and image.
+        // Commits changes to product properties or its associated image.
         private void buttonUpdateProduct_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(textBoxProductID.Text))
             {
-                MessageBox.Show("Vui lòng chọn sản phẩm!");
+                MessageBox.Show("Please select a product to update!", "Selection Required", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -354,7 +395,7 @@ namespace CoffeeShop
             ClearProductForm();
         }
 
-        // Searches for products.
+        // Filters the product list based on a text string.
         private void buttonFindProduct_Click(object sender, EventArgs e)
         {
             string keyword = textBoxFindProduct.Text;
@@ -362,7 +403,7 @@ namespace CoffeeShop
             LoadProducts(products);
         }
 
-        // Uploads an image from the computer.
+        // Launches a file dialog to choose a local image for the product.
         private void buttonProductUpLoad_Click(object sender, EventArgs e)
         {
             using (OpenFileDialog openFile = new OpenFileDialog())
@@ -379,11 +420,23 @@ namespace CoffeeShop
             }
         }
 
-        private bool Confirm(string message)
+        // Resets product input fields.
+        private void buttonClearProductInfo_Click(object sender, EventArgs e)
         {
-            return MessageBox.Show(message, "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes;
+            ClearProductForm();
         }
 
+        // ---------------------------------------------------------
+        // Helper Methods
+        // ---------------------------------------------------------
+
+        // Displays a standard confirmation prompt.
+        private bool Confirm(string message)
+        {
+            return MessageBox.Show(message, "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes;
+        }
+
+        // Switches button availability based on category selection.
         private void SetCategoryButtonState(bool categorySelected)
         {
             buttonAddCategory.Enabled = !categorySelected;
@@ -392,6 +445,7 @@ namespace CoffeeShop
             buttonClearCategoryInfo.Enabled = categorySelected;
         }
 
+        // Internal method to clear category fields.
         private void ClearCategoryForm()
         {
             textBoxCategoryID.Clear();
@@ -399,11 +453,7 @@ namespace CoffeeShop
             SetCategoryButtonState(false);
         }
 
-        private void buttonClearCategoryInfo_Click(object sender, EventArgs e)
-        {
-            ClearCategoryForm();
-        }
-
+        // Switches button availability based on product selection.
         private void SetProductButtonState(bool productSelected)
         {
             buttonAddProduct.Enabled = !productSelected;
@@ -412,6 +462,7 @@ namespace CoffeeShop
             buttonClearProductInfo.Enabled = productSelected;
         }
 
+        // Internal method to reset product form state.
         private void ClearProductForm()
         {
             textBoxProductID.Clear();
@@ -425,10 +476,9 @@ namespace CoffeeShop
             SetProductButtonState(false);
         }
 
-        private void buttonClearProductInfo_Click(object sender, EventArgs e)
+        private void textBoxFindProduct_TextChanged(object sender, EventArgs e)
         {
-            ClearProductForm();
+
         }
-    }
     }
 }

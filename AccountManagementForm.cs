@@ -22,137 +22,67 @@ namespace CoffeeShop
     /// ry>
     public partial class AccountManagementForm : Form
     {
-        UserService userService = new UserService();
+        // ---------------------------------------------------------
+        // Fields and Dependencies
+        // ---------------------------------------------------------
+        private UserService userService = new UserService();
         private User loggedInUser;
 
+        // ---------------------------------------------------------
+        // Initialization
+        // ---------------------------------------------------------
         public AccountManagementForm(User user)
         {
             InitializeComponent();
             UIHelper.ApplyModernStyle(this);
             this.loggedInUser = user;
 
+            // Setup initial UI state
             textBoxAccountID.Enabled = false; // Auto-incremented ID, not editable.
-            LoadAccount();       // Load account list.
-            LoadRoleToComboBox(); // Load roles.
-            SetButtonState(false); // Initial state: no row selected.
-        }
-
-        // Fetch account data from the database and populate the grid.
-        private void LoadAccount()
-        {
-            var accounts = userService.GetAll();
-            dataGridViewAccount.DataSource = accounts;
-            HideExtraColumns(); // Hide security-sensitive or unnecessary columns.
+            LoadAccount();                    // Load employee list into the grid.
+            LoadRoleToComboBox();             // Populate role selection.
+            SetButtonState(false);            // Disable Edit/Delete until a row is selected.
         }
 
         private void AccountManagementForm_Load(object sender, EventArgs e)
         {
-
         }
 
-        // Handles grid row click to display information in text boxes.
-        private void dataGridViewAccount_CellClick(object sender, DataGridViewCellEventArgs e)
+        // ---------------------------------------------------------
+        // Data Loading and UI Refresh
+        // ---------------------------------------------------------
+
+        // Fetches all accounts from the service and displays them in the DataGridView.
+        private void LoadAccount()
         {
-            if (e.RowIndex < 0) return;
-
-            var row = dataGridViewAccount.Rows[e.RowIndex];
-            textBoxAccountID.Text = row.Cells["Id"].Value?.ToString();
-            textBoxAccountUserName.Text = row.Cells["UserName"].Value?.ToString();
-            textBoxAccountDisplayName.Text = row.Cells["DisplayName"].Value?.ToString();
-            textBoxPassword.Clear(); // Clear password field for security (don't display directly).
-            comboBoxAccountRole.Text = row.Cells["Role"].Value?.ToString();
-
-            SetButtonState(true); // Account selected, enable Edit/Delete buttons.
+            var accounts = userService.GetAll();
+            dataGridViewAccount.DataSource = accounts;
+            HideExtraColumns(); // Ensure sensitive data is not shown in the grid.
         }
 
-        // Adds a new account.
-        private void buttonAddAccount_Click(object sender, EventArgs e)
+        // Configures the DataGridView by hiding columns that shouldn't be publicly visible.
+        private void HideExtraColumns()
         {
-            if (string.IsNullOrEmpty(textBoxAccountUserName.Text))
+            string[] columnsToHide = { "Password", "CitizenId", "Birthday", "PhoneNumber", "Picture" };
+            foreach (string colName in columnsToHide)
             {
-                MessageBox.Show("Tên đăng nhập không được để trống!");
-                return;
+                if (dataGridViewAccount.Columns.Contains(colName))
+                {
+                    dataGridViewAccount.Columns[colName].Visible = false;
+                }
             }
-
-            if (!Confirm("Bạn có chắc chắn muốn thêm người dùng này?"))
-                return;
-
-            var user = new User()
-            {
-                UserName = textBoxAccountUserName.Text,
-                DisplayName = textBoxAccountDisplayName.Text,
-                Password = textBoxPassword.Text,
-                Role = comboBoxAccountRole.Text,
-            };
-
-            userService.Add(user); // Password will be hashed inside the Service.
-            LoadAccount();
-            MessageBox.Show("Thêm người dùng thành công!");
-
-            ClearForm();
         }
 
-        // Deletes an account.
-        private void buttonDeleteAccount_Click(object sender, EventArgs e)
-        {
-            if (string.IsNullOrEmpty(textBoxAccountID.Text))
-            {
-                MessageBox.Show("Vui lòng chọn người dùng cần xóa!");
-                return;
-            }
-
-            if (!Confirm("Bạn có chắc chắn muốn xóa người dùng này?"))
-                return;
-
-            int id = int.Parse(textBoxAccountID.Text);
-
-            userService.Delete(id);
-            LoadAccount();
-            MessageBox.Show("Xóa người dùng thành công!");
-        }
-
-        // Updates account information.
-        private void buttonUpdateAccount_Click(object sender, EventArgs e)
-        {
-            if (string.IsNullOrEmpty(textBoxAccountID.Text))
-            {
-                MessageBox.Show("Vui lòng chọn người dùng cần cập nhật!");
-                return;
-            }
-
-            if (!Confirm("Bạn có chắc chắn muốn cập nhật người dùng này?"))
-                return;
-
-            var user = new User()
-            {
-                Id = int.Parse(textBoxAccountID.Text),
-                UserName = textBoxAccountUserName.Text,
-                DisplayName = textBoxAccountDisplayName.Text,
-                Password = textBoxPassword.Text,
-                Role = comboBoxAccountRole.Text
-            };
-
-            userService.Update(user);
-            LoadAccount();
-            MessageBox.Show("Cập nhật người dùng thành công!");
-            ClearForm();
-        }
-
-        // System roles list.
+        // Populates the role selection ComboBox with predefined system roles.
         private void LoadRoleToComboBox()
         {
             comboBoxAccountRole.Items.Clear();
-            comboBoxAccountRole.Items.Add("HRManager"); // Personnel Management
+            comboBoxAccountRole.Items.Add("HRManager"); // Human Resources Management
             comboBoxAccountRole.Items.Add("IManager");  // Inventory Management
-            comboBoxAccountRole.Items.Add("Staff");     // Sales Staff
+            comboBoxAccountRole.Items.Add("Staff");     // Front-end Sales Staff
         }
 
-        private bool Confirm(string message)
-        {
-            return MessageBox.Show(message, "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes;
-        }
-
-        // Resets input fields.
+        // Resets all input fields to their default empty state and updates button availability.
         private void ClearForm()
         {
             textBoxAccountID.Clear();
@@ -163,32 +93,102 @@ namespace CoffeeShop
             SetButtonState(false);
         }
 
+        // ---------------------------------------------------------
+        // UI Event Handlers
+        // ---------------------------------------------------------
+
+        // Populates the form fields with data from the selected row in the grid.
+        private void dataGridViewAccount_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex < 0) return;
+
+            var row = dataGridViewAccount.Rows[e.RowIndex];
+            textBoxAccountID.Text = row.Cells["Id"].Value?.ToString();
+            textBoxAccountUserName.Text = row.Cells["UserName"].Value?.ToString();
+            textBoxAccountDisplayName.Text = row.Cells["DisplayName"].Value?.ToString();
+            textBoxPassword.Clear(); // For security, do not display existing hashed password.
+            comboBoxAccountRole.Text = row.Cells["Role"].Value?.ToString();
+
+            SetButtonState(true); // Enable Edit/Delete/Detail buttons for the selected account.
+        }
+
+        // Collects form data and commands the service to create a new user account.
+        private void buttonAddAccount_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(textBoxAccountUserName.Text))
+            {
+                MessageBox.Show("Username cannot be empty!", "Input Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (string.IsNullOrEmpty(textBoxPassword.Text))
+            {
+                MessageBox.Show("Password cannot be empty!", "Input Validation", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            var user = new User()
+            {
+                UserName = textBoxAccountUserName.Text,
+                DisplayName = textBoxAccountDisplayName.Text,
+                Password = textBoxPassword.Text,
+                Role = comboBoxAccountRole.Text,
+            };
+
+            userService.Add(user); // Password hashing is handled by the Business Logic layer.
+            LoadAccount();
+            ClearForm();
+        }
+
+        // Commands the service to remove the selected account based on its ID.
+        private void buttonDeleteAccount_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(textBoxAccountID.Text))
+            {
+                MessageBox.Show("Please select a user to delete!", "Selection Required", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (!Confirm("Are you sure you want to delete this user?"))
+                return;
+
+            int id = int.Parse(textBoxAccountID.Text);
+
+            userService.Delete(id);
+            LoadAccount();
+            ClearForm();
+        }
+
+        // Updates specific fields (Role and Password) of the selected account.
+        private void buttonUpdateAccount_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(textBoxAccountID.Text))
+            {
+                MessageBox.Show("Please select a user to update!", "Selection Required", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            int id = int.Parse(textBoxAccountID.Text);
+            string role = comboBoxAccountRole.Text;
+            string password = textBoxPassword.Text;
+
+            userService.UpdateAccount(id, role, password);
+            LoadAccount();
+            ClearForm();
+        }
+
+        // Clears current input fields and selection.
         private void buttonClear_Click(object sender, EventArgs e)
         {
             ClearForm();
         }
 
-        /// <summary>
-        /// Adjusts button enabled states based on whether the user is adding or editing/deleting.
-        /// </summary>
-        private void SetButtonState(bool accountSelected)
-        {
-            buttonAddAccount.Enabled = !accountSelected;
-            buttonDeleteAccount.Enabled = accountSelected;
-            buttonUpdateAccount.Enabled = accountSelected;
-            buttonClear.Enabled = accountSelected;
-            buttonDetail.Enabled = accountSelected;
-
-            // Disallow editing the UserName (logical primary key).
-            textBoxAccountUserName.Enabled = !accountSelected;
-        }
-
-        // View detailed information (including profile picture).
+        // Opens the UserInformation dialog to show full details including profile picture.
         private void buttonDetail_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(textBoxAccountID.Text))
             {
-                MessageBox.Show("Vui lòng chọn người dùng!");
+                MessageBox.Show("Please select a user first!", "Selection Required", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
@@ -202,7 +202,7 @@ namespace CoffeeShop
             }
         }
 
-        // Search for employee accounts.
+        // Filters the grid based on the search keyword provided in the search box.
         private void buttonFindAccount_Click(object sender, EventArgs e)
         {
             string keyword = textBoxFindAccount.Text.Trim();
@@ -222,17 +222,29 @@ namespace CoffeeShop
             ClearForm();
         }
 
-        // Hide personal/security info from the main grid.
-        private void HideExtraColumns()
+        // ---------------------------------------------------------
+        // Helper Methods
+        // ---------------------------------------------------------
+
+        // Shows a confirmation dialog with the given message.
+        private bool Confirm(string message)
         {
-            string[] columnsToHide = { "Password", "CitizenId", "Birthday", "PhoneNumber", "Picture" };
-            foreach (string colName in columnsToHide)
-            {
-                if (dataGridViewAccount.Columns.Contains(colName))
-                {
-                    dataGridViewAccount.Columns[colName].Visible = false;
-                }
-            }
+            return MessageBox.Show(message, "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes;
+        }
+
+        /// <summary>
+        /// Adjusts button and textbox enabled states based on whether a row is currently selected.
+        /// </summary>
+        private void SetButtonState(bool accountSelected)
+        {
+            buttonAddAccount.Enabled = !accountSelected;
+            buttonDeleteAccount.Enabled = accountSelected;
+            buttonUpdateAccount.Enabled = accountSelected;
+            buttonClear.Enabled = accountSelected;
+            buttonDetail.Enabled = accountSelected;
+
+            // Disallow editing the UserName (logical unique identifier) once created.
+            textBoxAccountUserName.Enabled = !accountSelected;
         }
     }
 }

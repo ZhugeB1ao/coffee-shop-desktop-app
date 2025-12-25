@@ -176,6 +176,7 @@
             textBoxFindProduct.Name = "textBoxFindProduct";
             textBoxFindProduct.Size = new Size(460, 39);
             textBoxFindProduct.TabIndex = 1;
+            textBoxFindProduct.TextChanged += textBoxFindProduct_TextChanged;
             // 
             // buttonFindProduct
             // 
@@ -261,6 +262,7 @@
             // 
             textBoxProductID.Location = new Point(250, 10);
             textBoxProductID.Name = "textBoxProductID";
+            textBoxProductID.ReadOnly = true;
             textBoxProductID.Size = new Size(371, 39);
             textBoxProductID.TabIndex = 6;
             // 

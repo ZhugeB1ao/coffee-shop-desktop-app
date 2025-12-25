@@ -32,14 +32,14 @@ namespace CoffeeShop
         private void buttonLogin_Click(object sender, EventArgs e)
         {
             string username = textBoxUsername.Text.Trim();
-            string password = textBoxPassword.Text.Trim();
+            string password = textBoxPassword.Text; // Passwords should not be trimmed.
             
             // Call the Service to verify login credentials.
             loggedInUser = userService.Login(username, password);
 
             if (loggedInUser == null)
             {
-                MessageBox.Show("Tên đăng nhập hoặc mật khẩu không đúng.", "Đăng nhập thất bại", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Incorrect username or password.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -51,7 +51,7 @@ namespace CoffeeShop
         // Confirm when the user wants to close the application.
         private void LoginForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (MessageBox.Show("Bạn có chắc chắn muốn thoát ứng dụng?", "Xác nhận thoát", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+            if (MessageBox.Show("Are you sure you want to exit the application?", "Confirm Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
             {
                 e.Cancel = true;
             }
@@ -67,7 +67,6 @@ namespace CoffeeShop
             else
             {
                 timer1.Stop();
-                MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 // Open the Main Form and pass the logged-in user's information.
                 MainForm mainForm = new MainForm(loggedInUser);

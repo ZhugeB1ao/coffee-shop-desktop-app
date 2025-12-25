@@ -77,7 +77,7 @@ namespace CoffeeShop.DAO
                 string sql = @"SELECT t.Name as TableName, b.Price as TotalPrice, b.DateCheckIn as CheckIn, b.DateCheckOut as CheckOut
                                FROM Bill b 
                                JOIN Tables t ON b.IdTable = t.Id 
-                               WHERE b.Status = 1 AND b.DateCheckOut >= @From AND b.DateCheckOut <= @To";
+                               WHERE b.Status = 1 AND b.DateCheckOut >= @From AND b.DateCheckOut < @To";
                 return conn.Query(sql, new { From = from, To = to }).ToList();
             }
         }

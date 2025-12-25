@@ -46,9 +46,9 @@ namespace CoffeeShop
         // Load the list of bills from the database based on the date range.
         private void LoadBillListByDate(DateTime checkIn, DateTime checkOut)
         {
-            // Normalize time (From 00:00:00 on the start date to 23:59:59 on the end date).
+            // Normalize time (From 00:00:00 on the start date to 00:00:00 on the day after the end date).
             DateTime from = checkIn.Date;
-            DateTime to = checkOut.Date.AddDays(1).AddTicks(-1);
+            DateTime to = checkOut.Date.AddDays(1);
 
             var bills = billService.GetBillListByDate(from, to).ToList();
             
@@ -106,7 +106,7 @@ namespace CoffeeShop
 
             // Customize axis title display.
             chartRevenue.ChartAreas[0].AxisX.Title = "Date";
-            chartRevenue.ChartAreas[0].AxisY.Title = "Revenue (VND)";
+            chartRevenue.ChartAreas[0].AxisY.Title = "Revenue (USD)";
             chartRevenue.Series["Revenue"].ChartType = SeriesChartType.Column;
             chartRevenue.Series["Revenue"]["PixelPointWidth"] = "30";
         }
@@ -116,7 +116,7 @@ namespace CoffeeShop
         {
             if (dateTimePickerFrom.Value.Date > dateTimePickerTo.Value.Date)
             {
-                MessageBox.Show("Ngày bắt đầu không thể lớn hơn ngày kết thúc!", "Lỗi thời gian", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("The start date cannot be later than the end date!", "Time Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 

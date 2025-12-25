@@ -3,32 +3,112 @@
   "WorkspaceRootPath": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|c:\\users\\macbook\\source\\repos\\coffeeshop\\accountmanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:accountmanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|c:\\users\\macbook\\source\\repos\\coffeeshop\\accountmanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:accountmanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|c:\\users\\macbook\\source\\repos\\coffeeshop\\dao\\billrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:dao\\billrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|c:\\users\\macbook\\source\\repos\\coffeeshop\\bus\\billservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:bus\\billservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|c:\\users\\macbook\\source\\repos\\coffeeshop\\posform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:posform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|C:\\Users\\macbook\\source\\repos\\CoffeeShop\\posform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:posform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|c:\\users\\macbook\\source\\repos\\coffeeshop\\revenuestatisticsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:revenuestatisticsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|c:\\users\\macbook\\source\\repos\\coffeeshop\\bus\\tableservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:bus\\tableservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|c:\\users\\macbook\\source\\repos\\coffeeshop\\dto\\bill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:dto\\bill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|c:\\users\\macbook\\source\\repos\\coffeeshop\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|c:\\users\\macbook\\source\\repos\\coffeeshop\\dao\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:dao\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|c:\\users\\macbook\\source\\repos\\coffeeshop\\bus\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:bus\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|c:\\users\\macbook\\source\\repos\\coffeeshop\\ingredientmanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:ingredientmanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|C:\\Users\\macbook\\source\\repos\\CoffeeShop\\ingredientmanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:ingredientmanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|c:\\users\\macbook\\source\\repos\\coffeeshop\\bus\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:bus\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|c:\\users\\macbook\\source\\repos\\coffeeshop\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|c:\\users\\macbook\\source\\repos\\coffeeshop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|c:\\users\\macbook\\source\\repos\\coffeeshop\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|c:\\users\\macbook\\source\\repos\\coffeeshop\\dao\\billrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:dao\\billrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|c:\\users\\macbook\\source\\repos\\coffeeshop\\revenuestatisticsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:revenuestatisticsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|C:\\Users\\macbook\\source\\repos\\CoffeeShop\\revenuestatisticsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:revenuestatisticsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|c:\\users\\macbook\\source\\repos\\coffeeshop\\userinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:userinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|c:\\users\\macbook\\source\\repos\\coffeeshop\\bus\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:bus\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|c:\\users\\macbook\\source\\repos\\coffeeshop\\userinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:userinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|c:\\users\\macbook\\source\\repos\\coffeeshop\\userinformation.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:userinformation.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|c:\\users\\macbook\\source\\repos\\coffeeshop\\accountmanagementform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:accountmanagementform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|c:\\users\\macbook\\source\\repos\\coffeeshop\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|C:\\Users\\macbook\\source\\repos\\CoffeeShop\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|c:\\users\\macbook\\source\\repos\\coffeeshop\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|c:\\users\\macbook\\source\\repos\\coffeeshop\\dto\\bill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:dto\\bill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|c:\\users\\macbook\\source\\repos\\coffeeshop\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|c:\\users\\macbook\\source\\repos\\coffeeshop\\dao\\billinforepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,64 +123,20 @@
       "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:dto\\table.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|c:\\users\\macbook\\source\\repos\\coffeeshop\\bus\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:bus\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|C:\\Users\\macbook\\source\\repos\\CoffeeShop\\accountmanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:accountmanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|c:\\users\\macbook\\source\\repos\\coffeeshop\\accountmanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:accountmanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|c:\\users\\macbook\\source\\repos\\coffeeshop\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|c:\\users\\macbook\\source\\repos\\coffeeshop\\dao\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:dao\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|C:\\Users\\macbook\\source\\repos\\CoffeeShop\\userinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:userinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|c:\\users\\macbook\\source\\repos\\coffeeshop\\userinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:userinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|C:\\Users\\macbook\\source\\repos\\CoffeeShop\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|c:\\users\\macbook\\source\\repos\\coffeeshop\\coffeeshop.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:coffeeshop.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|c:\\users\\macbook\\source\\repos\\coffeeshop\\posform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:posform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|c:\\users\\macbook\\source\\repos\\coffeeshop\\posform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:posform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|c:\\users\\macbook\\source\\repos\\coffeeshop\\dao\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:dao\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|c:\\users\\macbook\\source\\repos\\coffeeshop\\ingredientmanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:ingredientmanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|c:\\users\\macbook\\source\\repos\\coffeeshop\\dao\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:dao\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|c:\\users\\macbook\\source\\repos\\coffeeshop\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|c:\\users\\macbook\\source\\repos\\coffeeshop\\dto\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -115,32 +151,12 @@
       "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:properties\\resources.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|c:\\users\\macbook\\source\\repos\\coffeeshop\\bus\\billservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:bus\\billservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|c:\\users\\macbook\\source\\repos\\coffeeshop\\bus\\billinfoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:bus\\billinfoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|c:\\users\\macbook\\source\\repos\\coffeeshop\\bus\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:bus\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|c:\\users\\macbook\\source\\repos\\coffeeshop\\bus\\tableservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:bus\\tableservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|c:\\users\\macbook\\source\\repos\\coffeeshop\\dto\\billinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:dto\\billinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|c:\\users\\macbook\\source\\repos\\coffeeshop\\bus\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:bus\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|c:\\users\\macbook\\source\\repos\\coffeeshop\\accountmanagementform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:accountmanagementform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|c:\\users\\macbook\\source\\repos\\coffeeshop\\dto\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -155,10 +171,6 @@
       "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:coffeeshop.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|c:\\users\\macbook\\source\\repos\\coffeeshop\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|c:\\users\\macbook\\source\\repos\\coffeeshop\\accountmanagementform.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
       "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:accountmanagementform.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
     },
@@ -169,10 +181,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|c:\\users\\macbook\\source\\repos\\coffeeshop\\posform.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
       "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:posform.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|c:\\users\\macbook\\source\\repos\\coffeeshop\\dto\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{952198EA-8C14-45D8-B3B9-578B8CA28739}|CoffeeShop.csproj|solutionrelative:dto\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -182,106 +190,88 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "BaseRepository.cs",
-              "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\DAO\\BaseRepository.cs",
-              "RelativeDocumentMoniker": "DAO\\BaseRepository.cs",
-              "ToolTip": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\DAO\\BaseRepository.cs",
-              "RelativeToolTip": "DAO\\BaseRepository.cs",
-              "ViewState": "AgIAAAAAAAAANDMzMzPrvxQAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T06:39:31.874Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "BillInfoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\DAO\\BillInfoRepository.cs",
-              "RelativeDocumentMoniker": "DAO\\BillInfoRepository.cs",
-              "ToolTip": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\DAO\\BillInfoRepository.cs",
-              "RelativeToolTip": "DAO\\BillInfoRepository.cs",
-              "ViewState": "AgIAAB0AAACAZmZmZmYjwAkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T10:12:14.972Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\BUS\\UserService.cs",
-              "RelativeDocumentMoniker": "BUS\\UserService.cs",
-              "ToolTip": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\BUS\\UserService.cs",
-              "RelativeToolTip": "BUS\\UserService.cs",
-              "ViewState": "AgIAAAUAAACACwAAAADwvxIAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T07:47:17.081Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\App.config",
-              "RelativeDocumentMoniker": "App.config",
-              "ToolTip": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\App.config",
-              "RelativeToolTip": "App.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-12-09T03:56:50.858Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RevenueStatisticsForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\RevenueStatisticsForm.cs",
-              "RelativeDocumentMoniker": "RevenueStatisticsForm.cs",
-              "ToolTip": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\RevenueStatisticsForm.cs [Design]",
-              "RelativeToolTip": "RevenueStatisticsForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T11:36:50.771Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "IngredientManagementForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\IngredientManagementForm.cs",
-              "RelativeDocumentMoniker": "IngredientManagementForm.cs",
-              "ToolTip": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\IngredientManagementForm.cs [Design]",
-              "RelativeToolTip": "IngredientManagementForm.cs [Design]",
+              "Title": "BillService.cs",
+              "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\BUS\\BillService.cs",
+              "RelativeDocumentMoniker": "BUS\\BillService.cs",
+              "ToolTip": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\BUS\\BillService.cs",
+              "RelativeToolTip": "BUS\\BillService.cs",
+              "ViewState": "AgIAABIAAAAA0MzMzMwEwBkAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T09:08:33.417Z"
+              "WhenOpened": "2025-12-09T09:48:31.379Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Table.cs",
-              "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\DTO\\Table.cs",
-              "RelativeDocumentMoniker": "DTO\\Table.cs",
-              "ToolTip": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\DTO\\Table.cs",
-              "RelativeToolTip": "DTO\\Table.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T09:03:44.189Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "BillRepository.cs",
               "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\DAO\\BillRepository.cs",
               "RelativeDocumentMoniker": "DAO\\BillRepository.cs",
               "ToolTip": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\DAO\\BillRepository.cs",
               "RelativeToolTip": "DAO\\BillRepository.cs",
-              "ViewState": "AgIAADAAAACgzMzMzMwEwEMAAABBAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAADA1czMzMwewC0AAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T09:45:06.35Z"
+              "WhenOpened": "2025-12-09T09:45:06.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TableService.cs",
+              "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\BUS\\TableService.cs",
+              "RelativeDocumentMoniker": "BUS\\TableService.cs",
+              "ToolTip": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\BUS\\TableService.cs",
+              "RelativeToolTip": "BUS\\TableService.cs",
+              "ViewState": "AgIAABIAAACAnJmZmZklwBwAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T09:05:36.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AccountManagementForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\AccountManagementForm.cs",
+              "RelativeDocumentMoniker": "AccountManagementForm.cs",
+              "ToolTip": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\AccountManagementForm.cs [Design]",
+              "RelativeToolTip": "AccountManagementForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-24T05:07:59.745Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "AccountManagementForm.cs",
+              "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\AccountManagementForm.cs",
+              "RelativeDocumentMoniker": "AccountManagementForm.cs",
+              "ToolTip": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\AccountManagementForm.cs",
+              "RelativeToolTip": "AccountManagementForm.cs",
+              "ViewState": "AgIAAHAAAAAA1szMzEwTwHkAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T10:21:14.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "POSForm.cs",
+              "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\POSForm.cs",
+              "RelativeDocumentMoniker": "POSForm.cs",
+              "ToolTip": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\POSForm.cs",
+              "RelativeToolTip": "POSForm.cs",
+              "ViewState": "AgIAAPAAAAAAeJmZmZkBwPoAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T07:31:12.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "POSForm.cs [Design]",
               "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\POSForm.cs",
               "RelativeDocumentMoniker": "POSForm.cs",
@@ -293,7 +283,272 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 9,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\BUS\\ProductService.cs",
+              "RelativeDocumentMoniker": "BUS\\ProductService.cs",
+              "ToolTip": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\BUS\\ProductService.cs",
+              "RelativeToolTip": "BUS\\ProductService.cs",
+              "ViewState": "AgIAACAAAABAzczMzAwkwBMAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T08:03:15.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\App.config",
+              "RelativeDocumentMoniker": "App.config",
+              "ToolTip": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\App.config",
+              "RelativeToolTip": "App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-12-09T03:56:50.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\DAO\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "DAO\\ProductRepository.cs",
+              "ToolTip": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\DAO\\ProductRepository.cs",
+              "RelativeToolTip": "DAO\\ProductRepository.cs",
+              "ViewState": "AgIAAFoAAAAAaWZmZmYOwGgAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T07:44:56.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IngredientManagementForm.cs",
+              "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\IngredientManagementForm.cs",
+              "RelativeDocumentMoniker": "IngredientManagementForm.cs",
+              "ToolTip": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\IngredientManagementForm.cs",
+              "RelativeToolTip": "IngredientManagementForm.cs",
+              "ViewState": "AgIAAIIBAAAAzczMzEwcwI0BAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T10:25:26.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IngredientManagementForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\IngredientManagementForm.cs",
+              "RelativeDocumentMoniker": "IngredientManagementForm.cs",
+              "ToolTip": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\IngredientManagementForm.cs [Design]",
+              "RelativeToolTip": "IngredientManagementForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-20T09:08:33.417Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CategoryService.cs",
+              "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\BUS\\CategoryService.cs",
+              "RelativeDocumentMoniker": "BUS\\CategoryService.cs",
+              "ToolTip": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\BUS\\CategoryService.cs",
+              "RelativeToolTip": "BUS\\CategoryService.cs",
+              "ViewState": "AgIAABsAAAAAppmZmZnlvyYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T09:09:35.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\LoginForm.cs",
+              "RelativeDocumentMoniker": "LoginForm.cs",
+              "ToolTip": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\LoginForm.cs",
+              "RelativeToolTip": "LoginForm.cs",
+              "ViewState": "AgIAAAoAAAAAzMzMzIwvwEUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T07:44:34.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LoginForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\LoginForm.cs",
+              "RelativeDocumentMoniker": "LoginForm.cs",
+              "ToolTip": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\LoginForm.cs [Design]",
+              "RelativeToolTip": "LoginForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-24T06:24:56.726Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "RevenueStatisticsForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\RevenueStatisticsForm.cs",
+              "RelativeDocumentMoniker": "RevenueStatisticsForm.cs",
+              "ToolTip": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\RevenueStatisticsForm.cs [Design]",
+              "RelativeToolTip": "RevenueStatisticsForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T11:36:50.771Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "RevenueStatisticsForm.cs",
+              "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\RevenueStatisticsForm.cs",
+              "RelativeDocumentMoniker": "RevenueStatisticsForm.cs",
+              "ToolTip": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\RevenueStatisticsForm.cs",
+              "RelativeToolTip": "RevenueStatisticsForm.cs",
+              "ViewState": "AgIAAFMAAAAAkJmZmZn7vzYAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-24T05:26:16.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UserInformation.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\UserInformation.cs",
+              "RelativeDocumentMoniker": "UserInformation.cs",
+              "ToolTip": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\UserInformation.cs [Design]",
+              "RelativeToolTip": "UserInformation.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-24T05:05:39.154Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\BUS\\UserService.cs",
+              "RelativeDocumentMoniker": "BUS\\UserService.cs",
+              "ToolTip": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\BUS\\UserService.cs",
+              "RelativeToolTip": "BUS\\UserService.cs",
+              "ViewState": "AgIAABUAAAAANTMzM7MswCIAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T07:47:17.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "UserInformation.cs",
+              "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\UserInformation.cs",
+              "RelativeDocumentMoniker": "UserInformation.cs",
+              "ToolTip": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\UserInformation.cs",
+              "RelativeToolTip": "UserInformation.cs",
+              "ViewState": "AgIAAFAAAABAAAAAAIAhwDEAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T10:22:34.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UserInformation.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\UserInformation.Designer.cs",
+              "RelativeDocumentMoniker": "UserInformation.Designer.cs",
+              "ToolTip": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\UserInformation.Designer.cs",
+              "RelativeToolTip": "UserInformation.Designer.cs",
+              "ViewState": "AgIAABUAAACw/////78wwNUAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-24T05:08:18.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AccountManagementForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\AccountManagementForm.Designer.cs",
+              "RelativeDocumentMoniker": "AccountManagementForm.Designer.cs",
+              "ToolTip": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\AccountManagementForm.Designer.cs",
+              "RelativeToolTip": "AccountManagementForm.Designer.cs",
+              "ViewState": "AgIAAPYAAAAAAAAAAAAiwAQBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T10:18:42.547Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\MainForm.cs",
+              "RelativeDocumentMoniker": "MainForm.cs",
+              "ToolTip": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\MainForm.cs",
+              "RelativeToolTip": "MainForm.cs",
+              "ViewState": "AgIAAIYAAAAANDMzM3MwwJMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-03T08:12:26.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\MainForm.cs",
+              "RelativeDocumentMoniker": "MainForm.cs",
+              "ToolTip": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\MainForm.cs [Design]",
+              "RelativeToolTip": "MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T09:19:52.145Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "MainForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\MainForm.Designer.cs",
+              "RelativeDocumentMoniker": "MainForm.Designer.cs",
+              "ToolTip": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\MainForm.Designer.cs",
+              "RelativeToolTip": "MainForm.Designer.cs",
+              "ViewState": "AgIAAF4AAABwMzMzM7MUwG4AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-07T11:22:01.22Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Table.cs",
+              "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\DTO\\Table.cs",
+              "RelativeDocumentMoniker": "DTO\\Table.cs",
+              "ToolTip": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\DTO\\Table.cs",
+              "RelativeToolTip": "DTO\\Table.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T09:03:44.189Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "BillInfoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\DAO\\BillInfoRepository.cs",
+              "RelativeDocumentMoniker": "DAO\\BillInfoRepository.cs",
+              "ToolTip": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\DAO\\BillInfoRepository.cs",
+              "RelativeToolTip": "DAO\\BillInfoRepository.cs",
+              "ViewState": "AgIAAB0AAACAZmZmZmYjwAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T10:12:14.972Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "BaseRepository.cs",
+              "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\DAO\\BaseRepository.cs",
+              "RelativeDocumentMoniker": "DAO\\BaseRepository.cs",
+              "ToolTip": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\DAO\\BaseRepository.cs",
+              "RelativeToolTip": "DAO\\BaseRepository.cs",
+              "ViewState": "AgIAAAAAAAAANDMzMzPrvxQAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T06:39:31.874Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
               "Title": "Bill.cs",
               "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\DTO\\Bill.cs",
               "RelativeDocumentMoniker": "DTO\\Bill.cs",
@@ -305,19 +560,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LoginForm.cs",
-              "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\LoginForm.cs",
-              "RelativeDocumentMoniker": "LoginForm.cs",
-              "ToolTip": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\LoginForm.cs",
-              "RelativeToolTip": "LoginForm.cs",
-              "ViewState": "AgIAAAEAAADAzMzMzAwswBkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T07:44:34.132Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 26,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -329,42 +572,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AccountManagementForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\AccountManagementForm.cs",
-              "RelativeDocumentMoniker": "AccountManagementForm.cs",
-              "ToolTip": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\AccountManagementForm.cs [Design]",
-              "RelativeToolTip": "AccountManagementForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T09:21:29.675Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "MainForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\MainForm.cs",
-              "RelativeDocumentMoniker": "MainForm.cs",
-              "ToolTip": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\MainForm.cs [Design]",
-              "RelativeToolTip": "MainForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T09:19:52.145Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "POSForm.cs",
-              "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\POSForm.cs",
-              "RelativeDocumentMoniker": "POSForm.cs",
-              "ToolTip": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\POSForm.cs",
-              "RelativeToolTip": "POSForm.cs",
-              "ViewState": "AgIAAAcBAAAALTMzM/MuwJEAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-07T07:31:12.883Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 30,
               "Title": "UserRepository.cs",
               "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\DAO\\UserRepository.cs",
               "RelativeDocumentMoniker": "DAO\\UserRepository.cs",
@@ -376,42 +584,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AccountManagementForm.cs",
-              "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\AccountManagementForm.cs",
-              "RelativeDocumentMoniker": "AccountManagementForm.cs",
-              "ToolTip": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\AccountManagementForm.cs",
-              "RelativeToolTip": "AccountManagementForm.cs",
-              "ViewState": "AgIAALIAAAAAmJmZmZnRv9wAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T10:21:14.636Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "UserInformation.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\UserInformation.cs",
-              "RelativeDocumentMoniker": "UserInformation.cs",
-              "ToolTip": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\UserInformation.cs [Design]",
-              "RelativeToolTip": "UserInformation.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T10:22:29.007Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "UserInformation.cs",
-              "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\UserInformation.cs",
-              "RelativeDocumentMoniker": "UserInformation.cs",
-              "ToolTip": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\UserInformation.cs",
-              "RelativeToolTip": "UserInformation.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAowEAAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-23T10:22:34.996Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 34,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\DTO\\User.cs",
               "RelativeDocumentMoniker": "DTO\\User.cs",
@@ -423,7 +596,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 31,
               "Title": "CoffeeShop.csproj",
               "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\CoffeeShop.csproj",
               "RelativeDocumentMoniker": "CoffeeShop.csproj",
@@ -431,11 +604,12 @@
               "RelativeToolTip": "CoffeeShop.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-12-03T07:18:52.952Z"
+              "WhenOpened": "2025-12-03T07:18:52.952Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 32,
               "Title": "POSForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\POSForm.Designer.cs",
               "RelativeDocumentMoniker": "POSForm.Designer.cs",
@@ -448,7 +622,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 33,
               "Title": "CategoryRepository.cs",
               "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\DAO\\CategoryRepository.cs",
               "RelativeDocumentMoniker": "DAO\\CategoryRepository.cs",
@@ -460,43 +634,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "ProductRepository.cs",
-              "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\DAO\\ProductRepository.cs",
-              "RelativeDocumentMoniker": "DAO\\ProductRepository.cs",
-              "ToolTip": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\DAO\\ProductRepository.cs",
-              "RelativeToolTip": "DAO\\ProductRepository.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAYwDkAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T07:44:56.702Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "IngredientManagementForm.cs",
-              "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\IngredientManagementForm.cs",
-              "RelativeDocumentMoniker": "IngredientManagementForm.cs",
-              "ToolTip": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\IngredientManagementForm.cs",
-              "RelativeToolTip": "IngredientManagementForm.cs",
-              "ViewState": "AgIAAAUBAAAA1MzMzEwYwBABAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-07T10:25:26.03Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "MainForm.cs",
-              "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\MainForm.cs",
-              "RelativeDocumentMoniker": "MainForm.cs",
-              "ToolTip": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\MainForm.cs",
-              "RelativeToolTip": "MainForm.cs",
-              "ViewState": "AgIAABgAAAAAzMzMzMwmwCcAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T08:12:26.244Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 35,
               "Title": "TableRepository.cs",
               "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\DAO\\TableRepository.cs",
               "RelativeDocumentMoniker": "DAO\\TableRepository.cs",
@@ -508,7 +646,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 36,
               "Title": "Resources.resx",
               "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\Properties\\Resources.resx",
               "RelativeDocumentMoniker": "Properties\\Resources.resx",
@@ -519,7 +657,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 37,
               "Title": "BillInfoService.cs",
               "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\BUS\\BillInfoService.cs",
               "RelativeDocumentMoniker": "BUS\\BillInfoService.cs",
@@ -531,55 +669,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "BillService.cs",
-              "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\BUS\\BillService.cs",
-              "RelativeDocumentMoniker": "BUS\\BillService.cs",
-              "ToolTip": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\BUS\\BillService.cs",
-              "RelativeToolTip": "BUS\\BillService.cs",
-              "ViewState": "AgIAAAEAAACAmpmZmZkOwBMAAABUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T09:48:31.379Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "CategoryService.cs",
-              "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\BUS\\CategoryService.cs",
-              "RelativeDocumentMoniker": "BUS\\CategoryService.cs",
-              "ToolTip": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\BUS\\CategoryService.cs",
-              "RelativeToolTip": "BUS\\CategoryService.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAcwCYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T09:09:35.817Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "TableService.cs",
-              "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\BUS\\TableService.cs",
-              "RelativeDocumentMoniker": "BUS\\TableService.cs",
-              "ToolTip": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\BUS\\TableService.cs",
-              "RelativeToolTip": "BUS\\TableService.cs",
-              "ViewState": "AgIAAAkAAAAAPjMzMzMLwBcAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-09T09:05:36.817Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "ProductService.cs",
-              "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\BUS\\ProductService.cs",
-              "RelativeDocumentMoniker": "BUS\\ProductService.cs",
-              "ToolTip": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\BUS\\ProductService.cs",
-              "RelativeToolTip": "BUS\\ProductService.cs",
-              "ViewState": "AgIAAAIAAAAAmpmZmZn/vxMAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-08T08:03:15.739Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 38,
               "Title": "BillInfo.cs",
               "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\DTO\\BillInfo.cs",
               "RelativeDocumentMoniker": "DTO\\BillInfo.cs",
@@ -591,19 +681,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "AccountManagementForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\AccountManagementForm.Designer.cs",
-              "RelativeDocumentMoniker": "AccountManagementForm.Designer.cs",
-              "ToolTip": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\AccountManagementForm.Designer.cs",
-              "RelativeToolTip": "AccountManagementForm.Designer.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAwwBYAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-07T10:18:42.547Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 39,
               "Title": "Product.cs",
               "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\DTO\\Product.cs",
               "RelativeDocumentMoniker": "DTO\\Product.cs",
@@ -615,7 +693,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 40,
               "Title": "Category.cs",
               "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\DTO\\Category.cs",
               "RelativeDocumentMoniker": "DTO\\Category.cs",
@@ -627,41 +705,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 41,
               "Title": "CoffeeShop",
               "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\CoffeeShop.csproj",
               "RelativeDocumentMoniker": "CoffeeShop.csproj",
               "ToolTip": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\CoffeeShop.csproj",
               "RelativeToolTip": "CoffeeShop.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-12-08T08:50:56.866Z"
+              "WhenOpened": "2025-12-08T08:50:56.866Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "MainForm.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\MainForm.Designer.cs",
-              "RelativeDocumentMoniker": "MainForm.Designer.cs",
-              "ToolTip": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\MainForm.Designer.cs",
-              "RelativeToolTip": "MainForm.Designer.cs",
-              "ViewState": "AgIAABYAAAAANDMzMzMRwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-07T11:22:01.22Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 42,
               "Title": "AccountManagementForm.resx",
               "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\AccountManagementForm.resx",
               "RelativeDocumentMoniker": "AccountManagementForm.resx",
               "ToolTip": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\AccountManagementForm.resx",
               "RelativeToolTip": "AccountManagementForm.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-12-07T10:18:42.523Z"
+              "WhenOpened": "2025-12-07T10:18:42.523Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 43,
               "Title": "RevenueStatisticsForm.resx",
               "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\RevenueStatisticsForm.resx",
               "RelativeDocumentMoniker": "RevenueStatisticsForm.resx",
@@ -673,7 +741,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 44,
               "Title": "POSForm.resx",
               "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\POSForm.resx",
               "RelativeDocumentMoniker": "POSForm.resx",
@@ -682,18 +750,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
               "WhenOpened": "2025-12-07T10:18:40.538Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "Employee.cs",
-              "DocumentMoniker": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\DTO\\Employee.cs",
-              "RelativeDocumentMoniker": "DTO\\Employee.cs",
-              "ToolTip": "C:\\Users\\macbook\\source\\repos\\CoffeeShop\\DTO\\Employee.cs",
-              "RelativeToolTip": "DTO\\Employee.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-03T10:58:31.459Z"
             }
           ]
         }

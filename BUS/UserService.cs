@@ -24,21 +24,29 @@ namespace CoffeeShop.BUS
         /// </summary>
         public User Login(string username, string password)
         {
+            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
+                return null;
+
             User user = repo.GetUserByUserName(username);
             
             if (user != null)
             {
+                // First attempt: Verify using BCrypt.
                 try
                 {
-                    // Verify password using the BCrypt library.
                     if (BCrypt.Net.BCrypt.Verify(password, user.Password))
                         return user;
                 }
                 catch
                 {
-                    // If not a BCrypt hash (legacy data), perform a direct comparison.
-                    if (user.Password == password)
-                        return user;
+                    // If the stored password is not a valid BCrypt hash, 
+                    // this exception is expected. We proceed to the fallback check.
+                }
+
+                // Second attempt: Fallback to plain text comparison (Legacy support).
+                if (user.Password == password)
+                {
+                    return user;
                 }
             }
             return null;
@@ -62,6 +70,31 @@ namespace CoffeeShop.BUS
                 user.Password = BCrypt.Net.BCrypt.HashPassword(user.Password);
             }
             repo.Update(user);
+        }
+
+        // Partial update for Account Management: Role and Password.
+        public void UpdateAccount(int id, string role, string password)
+        {
+            string hashedPassword = null;
+            if (!string.IsNullOrEmpty(password) && password != "********")
+            {
+                hashedPassword = BCrypt.Net.BCrypt.HashPassword(password);
+            }
+            else
+            {
+                // If password is empty or hidden, we fetch the old one to avoid overwriting with null/empty.
+                // However, the DAO method we wrote updates the field. 
+                // Let's refine the logic to only update password if provided.
+                User oldUser = repo.GetAll().FirstOrDefault(u => u.Id == id);
+                hashedPassword = oldUser?.Password;
+            }
+            repo.UpdateAccount(id, role, hashedPassword);
+        }
+
+        // Partial update for User Information: personal details (excludes password/role).
+        public void UpdatePersonalInfo(User user)
+        {
+            repo.UpdatePersonalInfo(user);
         }
 
         // Deletes a user.
